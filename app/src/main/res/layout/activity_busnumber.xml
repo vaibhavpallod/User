@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Busnumber"
+    android:orientation="vertical"
+    >
+
+    <AutoCompleteTextView
+        android:id="@+id/from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="From "
+        android:inputType="text"
+        android:layout_marginTop="55dp"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_arrow_downward_black_24dp"
+        />
+
+    <AutoCompleteTextView
+        android:id="@+id/to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:hint="To"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+<view
+    android:background="@color/orange"
+    android:layout_marginTop="20dp"
+    android:textAlignment="center"
+    android:text="OR"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"/>
+    <AutoCompleteTextView
+        android:id="@+id/busno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:hint="Enter Bus number"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnbusno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="START" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip2"
+        android:text="Hello World"
+
+        app:chipIcon="@drawable/ic_check_black_24dp"
+        style="@style/Widget.MaterialComponents.Chip.Entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
